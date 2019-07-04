@@ -1,16 +1,24 @@
-const storage = sessionStorage;
+// use session storage if supported, usual JS object otherwise
+let storage = (sessionStorage) ? sessionStorage : {};
 
 const calculate = () => {
-    let totalAmount = Number(storage.getItem('initialAmount'));
-    for (let i = 1; i <= Number(storage.getItem('investmentDuration')); i++) {
-        totalAmount += totalAmount * Number(storage.getItem('returnRate')) / 100.0;
-        totalAmount -= totalAmount * Number(storage.getItem('inflation')) / 100.0;
+    let totalAmount = Number(storage['initialAmount']);
+    const investmentDuration = Number(storage['investmentDuration']);
+    const returnRate = Number(storage['returnRate']);
+    const inflation = Number(storage['inflation']);
+    const additionalContribution = Number(storage['additionalContribution']);
+
+    for (let i = 1; i <= investmentDuration; i++) {
+        // assume doing an additional contribution before yielding yearly return and calculating inflation
+        totalAmount += additionalContribution;
+        totalAmount += totalAmount * returnRate / 100.0;
+        totalAmount -= totalAmount * inflation / 100.0;
     }
-    console.log(totalAmount);
+
     return totalAmount;
 };
 
-$(document).ready(() => {    
+$(document).ready(() => {
     const fields = {
         targetAmount: $('#target-amount'),
         initialAmount: $('#initial-amount'),
@@ -22,15 +30,9 @@ $(document).ready(() => {
 
     for (let inputName in fields) {
         const currentInput = fields[inputName];
-        currentInput.keyup((event) => {
-            storage.setItem(inputName, currentInput.val());
-            $('total-value').innerHTML = calculate();
+        currentInput.keyup(() => {
+            storage[inputName] = currentInput.val();
+            $('#total-value').text(calculate());
         });
     };
-
-    $("input[name='contribution-frequency']").change((event) => {
-        storage.setItem('contributionFrequency', $("input[name='contribution-frequency']:checked").val());
-        $('total-value').innerHTML = calculate();
-    });
-
 });

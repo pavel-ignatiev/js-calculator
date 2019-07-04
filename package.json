@@ -1,0 +1,19 @@
+{
+  "name": "js-calculator",
+  "version": "1.0.0",
+  "description": "Very basic investment calculator written in JS",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavel-ignatiev/js-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavel-ignatiev/js-calculator/issues"
+  },
+  "homepage": "https://github.com/pavel-ignatiev/js-calculator#readme"
+}
