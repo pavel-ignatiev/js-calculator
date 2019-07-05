@@ -48,7 +48,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">€</span>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Target value to achieve (to the nearest euro)" id="target-amount">
+                                <input type="number" class="form-control" aria-label="Target value to achieve (to the nearest euro)" value="100000" id="target-amount">
                                 <div class="input-group-append">
                                     <span class="input-group-text">.00</span>
                                 </div>
@@ -65,7 +65,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text">€</span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Initial investment mount (to the nearest euro)" id="initial-amount">
+                            <input type="number" class="form-control" aria-label="Initial investment mount (to the nearest euro)" value="50000" id="initial-amount" required>
                             <div class="input-group-append">
                                 <span class="input-group-text">.00</span>
                             </div>
@@ -73,7 +73,7 @@
 
                         <label for="investment-duration">Investment duration</label>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" aria-label="Investment duration in years" id="investment-duration">
+                            <input type="number" class="form-control" aria-label="Investment duration in years" value="10" id="investment-duration" required>
                             <div class="input-group-append">
                                 <span class="input-group-text">years</span>
                             </div>
@@ -81,7 +81,7 @@
 
                         <label for="return-rate">Rate of return</label>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" aria-label="Rate of return in percent" id="return-rate">
+                            <input type="number" class="form-control" aria-label="Rate of return in percent" value="3" id="return-rate" required>
                             <div class="input-group-append">
                                 <span class="input-group-text">%</span>
                             </div>
@@ -92,7 +92,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text">€</span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Additional yearly contribution (to the nearest euro)" id="additional-contribution">
+                            <input type="number" class="form-control" aria-label="Additional yearly contribution (to the nearest euro)" value="1000" id="additional-contribution">
                             <div class="input-group-append">
                                 <span class="input-group-text">.00</span>
                             </div>
@@ -100,7 +100,7 @@
 
                         <label for="inflation">Yearly inflation</label>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" aria-label="Yearly inflation in percent" id="inflation">
+                            <input type="number" class="form-control" aria-label="Yearly inflation in percent" value="2" id="inflation">
                             <div class="input-group-append">
                                 <span class="input-group-text">%</span>
                             </div>

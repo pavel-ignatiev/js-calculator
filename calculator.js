@@ -30,9 +30,17 @@ $(document).ready(() => {
 
     for (let inputName in fields) {
         const currentInput = fields[inputName];
+
+        // load default values
+        storage[inputName] = currentInput.val();
+
+        // define listeners to recalculate results on user input
         currentInput.keyup(() => {
             storage[inputName] = currentInput.val();
             $('#total-value').text(calculate());
         });
     };
+
+    // calculate default total 
+    $('#total-value').text(calculate());
 });
