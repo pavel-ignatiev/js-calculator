@@ -8,31 +8,40 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Enable dismissable Bootstrap alerts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="alert.js" crossorigin="anonymous"></script>
     
-    <title>Investment calculator</title>
+    <title>Investitionsrechner</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-default" >
-            <div class="container-fluid">
-                <div id="container-logo" class="navbar-header">
-                    <a href="#">Investment calculator</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="./">
+                    <img src="calculator.svg" width="30" height="30" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse my-lg-0" id="navbarSupportedContent">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="risks.html">Risiken <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="strategies.html">Strategien</a>
+                        <a class="nav-item nav-link" href="types.html">Typen</a>
+                        <a class="nav-item nav-link" href="calculator.html">Rechner</a>
+                    </div>
                 </div>
-                <ul id="container-navbar-items" class="nav">
-                    <li class="nav-link"><a href="risks.html">Risks</a></li>
-                    <li class="nav-link"><a href="strategies.html">Strategies</a></li>
-                    <li class="nav-link"><a href="types.html">Types</a></li>
-                    <li class="nav-link"><a href="calculator.html">Calculator</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+    </nav>
     <div id="container-main" class="container-fluid">
         <!-- main page content area -->
     </div>
-    <div id="container-footer" class="container-fluid">
-        <!-- footer area -->
+    <div id="container-footer" class="alert alert-secondary alert-dismissible small fixed-bottom" role="alert">
+            <button type="button" class="close" data-dismiss = "alert" id="alert-close-button">x</button>
+            <p class="mb-1">Webseitenlogo wurde netterweise von <a href="https://www.flaticon.com/authors/smashicons"><u>Smashicons</u></a> via www.flaticon.com bereitgestellt.</p>
+            <p class="my-0">Diese Webseite verwendet keine Cookies, speichert allerdings Parameter der Kalkulation im Sitzungsspeicher des Browsers. Diese Daten werden gelöscht, sobald Sie den Browserfenster schließen.</p>
     </div>
 </body>
 
