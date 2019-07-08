@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const alertBox = document.getElementById('container-footer');
+    const alertBox = document.getElementById('container-alert');
     const closeButton = document.getElementById('alert-close-button');
 
     // this won't work if session storage is not available
