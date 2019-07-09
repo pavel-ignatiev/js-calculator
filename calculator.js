@@ -41,6 +41,10 @@ const toggleErrorMsg = (msgContainer, currentInput, fields) => {
     // even if the invalid input has lost focus
     // of course there are better ways to handle this problem
     let allFieldsValid = true;
+
+    // JSHint warning: The body of a for in should be wrapped in an if statement 
+    // to filter unwanted properties from the prototype
+    // This warning is duly noted; the code works and I won't refactor it right now
     for (let key in fields) {
         if (!fields[key].checkValidity()) {
             allFieldsValid = false;
@@ -70,6 +74,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const futureValue = document.getElementById('future-value');
     const errorMsg = document.getElementById('error-msg');
 
+    // JSHint warning: The body of a for in should be wrapped in an if statement 
+    // to filter unwanted properties from the prototype
+    // This warning is duly noted; the code works and I won't refactor it right now
     for (let inputName in fields) {
         const currentInput = fields[inputName];
 
@@ -82,6 +89,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
 
         // listen to user input (manual or up/down button clicks)
+        // JSHint warning: Functions declared within loops 
+        // referencing an outer scoped variable may lead to confusing semantics. (storage, inputName)
+        // This warning is duly noted; the code works and I won't refactor it right now
         currentInput.oninput = function () {
             // store the new input
             storage[inputName] = currentInput.value;

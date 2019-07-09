@@ -1,121 +1,112 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="de">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+      <!-- Google font for the footer -->
+      <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
 
-    <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+      <!-- Enable dismissable Bootstrap alerts -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="alert.js" crossorigin="anonymous"></script>
 
-    <!-- Enable dismissable Bootstrap alerts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="alert.js" crossorigin="anonymous"></script>
-    
-    <title>Investitionsrechner</title>
-</head>
+      <title>Investitionsrechner</title>
+   </head>
+   <body>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">
-                    <img src="logo.svg" width="30" height="30" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse my-lg-0" id="navbarSupportedContent">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="risks.html">Risiken <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="strategies.html">Strategien</a>
-                        <a class="nav-item nav-link" href="types.html">Typen</a>
-                        <a class="nav-item nav-link" href="calculator.html">Rechner</a>
-                    </div>
-                </div>
-    </nav>
-    <div id="container-main" class="container p-5 h-100 justify-content-center">
-        <div class="row-fluid"><div class="col">
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="index.html">
+            <img src="logo.svg" width="30" height="30" alt="Taschenrechnerlogo">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse my-lg-0" id="navbarSupportedContent">
+            <div class="navbar-nav">
+               <a class="nav-item nav-link active" href="risks.html">Risiken <span class="sr-only">(current)</span></a>
+               <a class="nav-item nav-link" href="strategies.html">Strategien</a>
+               <a class="nav-item nav-link" href="types.html">Typen</a>
+               <a class="nav-item nav-link" href="calculator.html">Rechner</a>
+            </div>
+         </div>
+      </nav>
 
-        <h3>Was sind Investitionsrisiken?</h3>
+      <!-- Main content -->
+      <div id="container-main" class="container p-5 h-100 justify-content-center">
+         <div class="row-fluid">
+            <div class="col">
+               <h3>Was sind Investitionsrisiken?</h3>
+               <p>
+                  Das Marktrisiko ist die Wahrscheinlichkeit, dass der Wert von Finanzinstrumenten sinkt. Die Aktienkurse können fallen, und das Unternehmen, das die Anleihen ausgegeben hat, kann bankrott gehen und das Geld nicht zurückgeben. Es ist nahezu unmöglich, die Wahrscheinlichkeit einer Wertminderung von Wertpapieren vorherzusagen. Das ist fast dasselbe wie die Vorhersage, wie dein Tag verlaufen wird. Sie werden wahrscheinlich erwarten, dass Sie am Montagmorgen zur Arbeit gehen und am Abend nach Hause zurückkehren. Aber du kannst dir nicht sicher sein, was bei der Arbeit passiert. Das Gleiche passiert an der Börse. Sie können Trends vorhersehen, aber nicht - bestimmte Ereignisse.
+               </p>
+               <p>
+                  So war zum Beispiel 2017 klar, dass das Goldminenunternehmen Alrosa über eine gute Finanzlage und eine der niedrigsten Rentabilität der Goldminen der Welt verfügte. Die Aktien schienen ein vielversprechendes Investment zu sein. Aber im August 2017 wurde die Mir-Goldmine überflutet. Aufgrund von Notfällen wurde die Arbeit in der Mine unterbrochen. Die Aktien des Unternehmens reagierten sofort: Nach den ersten Meldungen über den Wasserbruch sanken sie um 3,5%. Es dauerte mehrere Monate, bis der Aktienkurs wieder auf den Vor-Crash-Wert zurückkehrte. Hätte der Anleger 3 Monate lang in die Wertpapiere von Alrosa investiert, hätte er sein Geld verloren.
+               </p>
+               <p>
+                  Es gibt verschiedene Theorien und Messungen der Risikobewertung, aber es ist für einen gewöhnlichen Anleger ziemlich schwierig, sie zu verstehen und im Handel zu verwenden. Daher ist es besser, sich an die wichtigste Schlussfolgerung zu erinnern: Je höher die Rendite, desto größer das Risiko.
+               </p>
+               <h3>Risiken einschätzen</h3>
+               <p>
+                  Zu den riskanten Instrumenten gehören Aktien, Währungen und Gold. ETFs gelten als zuverlässiger und Anleihen als das zuverlässigste Instrument. Aber es ist unmöglich, mit Sicherheit zu sagen, wie riskant eine bestimmte Sicherheit ist. Mathematische Modelle von Analysten können einfach nicht alle Faktoren berücksichtigen, die die Bewegung der Märkte beeinflussen. Es gibt jedoch mehrere Möglichkeiten, die Zuverlässigkeit des Unternehmens einzuschätzen.
+               </p>
+               <h5>Kreditauskunftei-Ratings</h5>
+               <p>
+                  Spezielle Auskunfteien bewerten Unternehmen und Länder. Zu diesem Zweck studieren sie Dokumente über die finanzielle Lage des Unternehmens, die Beziehungen zu den Partnern usw. Auf Basis dieser Informationen wird den Unternehmen ein Rating auf einer speziellen Skala zugeordnet. Aber selbst das höchste Rating garantiert nicht, dass das Unternehmen nicht in Konkurs geht, und ein niedriges Rating bedeutet nicht, dass das Unternehmen kurz vor dem Ausfall steht. Die bekanntesten westlichen Ratingagenturen sind Fitch, Moody's und Standard & Poor's. In Russland genießen ACRA und Expert RA das größte Vertrauen. Sie können die Bewertungen bestimmter Unternehmen auf deren Websites einsehen oder in den Nachrichten suchen.
+               </p>
+               <h5>Risikomarkierung</h5>
+               <p>
+                  Jeder an der Moskauer Börse gehandelte ETF ist mit einem Risikolabel versehen. Er wird auf einer Skala von 1 bis 7 bewertet, wobei 1 der zuverlässigste und 7 der risikoreichste Fonds ist.
+               </p>
+               <p>
+                  Die Risikostufe ist in einem Dokument enthalten, das als KID abgekürzt ist. So hat beispielsweise der ETF russischer Unternehmensanleihen einen Risikowert von 4.
+               </p>
+               <h5>Eigenständige Analyse</h5>
+               <p>
+                  Erfahrene Investoren entwickeln im Laufe der Zeit ihre eigenen Risikobewertungskriterien. So macht der legendäre Warren Buffett heute keine währungsabhängigen Investitionen mehr. Und die Heldin unseres Textes, Larisa Moroza, die seit 10 Jahren in Aktien investiert, untersucht bei der Beurteilung des Unternehmens, wie vielversprechend sein Geschäft ist:
+               </p>
+               <p>
+                  "Im Jahr 2015 waren die Lenenergo-Aktien aufgrund der finanziellen Probleme des Unternehmens nicht beliebt: Damals verlor das Unternehmen große Summen an Einlagen bei der angeschlagenen Tavrichesky Bank. Meine Begründung war folgende: Ja, dieses Unternehmen durchlebt eine schwierige Zeit, aber es muss hier raus, es muss die riesige Stadt St. Petersburg mit Strom versorgen. Und ich hatte Recht: Die Aktien stiegen von 15 Rubel auf 100 Rubel.
+               </p>
+               <p>
+                  In jedem Fall sollte bei der Risikobewertung immer eine weitere wichtige Regel für Investoren beachtet werden: Vergangene Ergebnisse garantieren nicht die Zukunft.
+               </p>
+               <h3>Geeignetes Risikoniveau auswählen</h3>
+               <p>
+                  Bevor Sie sich für den Kauf an der Börse entscheiden, müssen Sie Ihre Ziele definieren. Das akzeptable Risikoniveau hängt von ihnen ab. Wenn Sie also 30 Jahre alt sind und Geld für den Ruhestand sparen, können Sie ein Risiko eingehen und in Aktien investieren. In diesem Alter können Sie sich mehr Risiko leisten, um hohe Renditen zu erzielen. Wenn Sie plötzlich Geld verlieren, haben Sie immer noch Zeit, es mit konservativeren Instrumenten zu verdienen.
+               </p>
+               <p>
+                  Wenn Sie 55 Jahre alt sind, werden Aktien zu riskant für Sie zu investieren, denn wenn Sie Geld verlieren, werden Sie keine Zeit haben, Geld zu sparen.
+               </p>
+               <p>
+                  Viele Broker haben spezielle Tests, um das Risikoprofil des Anlegers zu ermitteln. Zum Beispiel kann der Investor bei der Anwendung von Sberbank seine Risikoeinstellung beurteilen, sich Ziele setzen und daraus Empfehlungen für die Auswahl von Wertpapieren ableiten.
+               </p>
+               <div class="alert-secondary p-3 small text-muted">
+                  Quelle: <a href="https://dokhodchivo.ru/chto-takoe-invest-risk">https://dokhodchivo.ru/chto-takoe-invest-risk</a> übersetzt mit <a href="https://www.deepl.com">DeepL</a>
+               </div>
+            </div>
+         </div>
+      </div>
 
-        <p>
-            Das Marktrisiko ist die Wahrscheinlichkeit, dass der Wert von Finanzinstrumenten sinkt. Die Aktienkurse können fallen, und das Unternehmen, das die Anleihen ausgegeben hat, kann bankrott gehen und das Geld nicht zurückgeben. Es ist nahezu unmöglich, die Wahrscheinlichkeit einer Wertminderung von Wertpapieren vorherzusagen. Das ist fast dasselbe wie die Vorhersage, wie dein Tag verlaufen wird. Sie werden wahrscheinlich erwarten, dass Sie am Montagmorgen zur Arbeit gehen und am Abend nach Hause zurückkehren. Aber du kannst dir nicht sicher sein, was bei der Arbeit passiert. Das Gleiche passiert an der Börse. Sie können Trends vorhersehen, aber nicht - bestimmte Ereignisse.
-        </p>
-        
-        <p>
-            So war zum Beispiel 2017 klar, dass das Goldminenunternehmen Alrosa über eine gute Finanzlage und eine der niedrigsten Rentabilität der Goldminen der Welt verfügte. Die Aktien schienen ein vielversprechendes Investment zu sein. Aber im August 2017 wurde die Mir-Goldmine überflutet. Aufgrund von Notfällen wurde die Arbeit in der Mine unterbrochen. Die Aktien des Unternehmens reagierten sofort: Nach den ersten Meldungen über den Wasserbruch sanken sie um 3,5%. Es dauerte mehrere Monate, bis der Aktienkurs wieder auf den Vor-Crash-Wert zurückkehrte. Hätte der Anleger 3 Monate lang in die Wertpapiere von Alrosa investiert, hätte er sein Geld verloren.
-        </p>
+      <!-- Cookie alert -->
+      <div id="container-alert" class="mb-0 p-4 alert alert-warning alert-dismissible small fixed-bottom" role="alert">
+         <button type="button" class="close" data-dismiss = "alert" id="alert-close-button">x</button>
+         <p class="my-0">Diese Webseite verwendet keine Cookies, speichert allerdings Parameter der Kalkulation im Sitzungsspeicher des Browsers. Diese Daten werden gelöscht, sobald Sie den Browserfenster schließen.</p>
+      </div>
 
-        <p>
-            Es gibt verschiedene Theorien und Messungen der Risikobewertung, aber es ist für einen gewöhnlichen Anleger ziemlich schwierig, sie zu verstehen und im Handel zu verwenden. Daher ist es besser, sich an die wichtigste Schlussfolgerung zu erinnern: Je höher die Rendite, desto größer das Risiko.
-        </p>
-
-        <h3>Risiken einschätzen</h3>
-
-        <p>
-            Zu den riskanten Instrumenten gehören Aktien, Währungen und Gold. ETFs gelten als zuverlässiger und Anleihen als das zuverlässigste Instrument. Aber es ist unmöglich, mit Sicherheit zu sagen, wie riskant eine bestimmte Sicherheit ist. Mathematische Modelle von Analysten können einfach nicht alle Faktoren berücksichtigen, die die Bewegung der Märkte beeinflussen. Es gibt jedoch mehrere Möglichkeiten, die Zuverlässigkeit des Unternehmens einzuschätzen.
-        </p>
-
-        <h5>Kreditauskunftei-Ratings</h5>
-
-        <p>
-            Spezielle Auskunfteien bewerten Unternehmen und Länder. Zu diesem Zweck studieren sie Dokumente über die finanzielle Lage des Unternehmens, die Beziehungen zu den Partnern usw. Auf Basis dieser Informationen wird den Unternehmen ein Rating auf einer speziellen Skala zugeordnet. Aber selbst das höchste Rating garantiert nicht, dass das Unternehmen nicht in Konkurs geht, und ein niedriges Rating bedeutet nicht, dass das Unternehmen kurz vor dem Ausfall steht. Die bekanntesten westlichen Ratingagenturen sind Fitch, Moody's und Standard & Poor's. In Russland genießen ACRA und Expert RA das größte Vertrauen. Sie können die Bewertungen bestimmter Unternehmen auf deren Websites einsehen oder in den Nachrichten suchen.
-        </p>
-
-        <h5>Risikomarkierung</h5>
-
-        <p>
-            Jeder an der Moskauer Börse gehandelte ETF ist mit einem Risikolabel versehen. Er wird auf einer Skala von 1 bis 7 bewertet, wobei 1 der zuverlässigste und 7 der risikoreichste Fonds ist.
-        </p>
-
-        <p>
-            Die Risikostufe ist in einem Dokument enthalten, das als KID abgekürzt ist. So hat beispielsweise der ETF russischer Unternehmensanleihen einen Risikowert von 4.
-        </p>
-
-        <h5>Eigenständige Analyse</h5>
-
-        <p>
-            Erfahrene Investoren entwickeln im Laufe der Zeit ihre eigenen Risikobewertungskriterien. So macht der legendäre Warren Buffett heute keine währungsabhängigen Investitionen mehr. Und die Heldin unseres Textes, Larisa Moroza, die seit 10 Jahren in Aktien investiert, untersucht bei der Beurteilung des Unternehmens, wie vielversprechend sein Geschäft ist:
-        </p>
-
-        <p>
-            "Im Jahr 2015 waren die Lenenergo-Aktien aufgrund der finanziellen Probleme des Unternehmens nicht beliebt: Damals verlor das Unternehmen große Summen an Einlagen bei der angeschlagenen Tavrichesky Bank. Meine Begründung war folgende: Ja, dieses Unternehmen durchlebt eine schwierige Zeit, aber es muss hier raus, es muss die riesige Stadt St. Petersburg mit Strom versorgen. Und ich hatte Recht: Die Aktien stiegen von 15 Rubel auf 100 Rubel.
-        </p>
-
-        <p>
-            In jedem Fall sollte bei der Risikobewertung immer eine weitere wichtige Regel für Investoren beachtet werden: Vergangene Ergebnisse garantieren nicht die Zukunft.
-        </p>
-
-        <h3>Geeignetes Risikoniveau auswählen</h3>
-
-        <p>
-            Bevor Sie sich für den Kauf an der Börse entscheiden, müssen Sie Ihre Ziele definieren. Das akzeptable Risikoniveau hängt von ihnen ab. Wenn Sie also 30 Jahre alt sind und Geld für den Ruhestand sparen, können Sie ein Risiko eingehen und in Aktien investieren. In diesem Alter können Sie sich mehr Risiko leisten, um hohe Renditen zu erzielen. Wenn Sie plötzlich Geld verlieren, haben Sie immer noch Zeit, es mit konservativeren Instrumenten zu verdienen.
-        </p>
-
-        <p>
-            Wenn Sie 55 Jahre alt sind, werden Aktien zu riskant für Sie zu investieren, denn wenn Sie Geld verlieren, werden Sie keine Zeit haben, Geld zu sparen.
-        </p>
-
-        <p>
-            Viele Broker haben spezielle Tests, um das Risikoprofil des Anlegers zu ermitteln. Zum Beispiel kann der Investor bei der Anwendung von Sberbank seine Risikoeinstellung beurteilen, sich Ziele setzen und daraus Empfehlungen für die Auswahl von Wertpapieren ableiten.
-        </p>
-
-        <p>
-            https://dokhodchivo.ru/chto-takoe-invest-risk
-        </p>
-        </div></div>
-    </div>
-    <div id="container-alert" class="mb-0 p-4 alert alert-warning alert-dismissible small fixed-bottom" role="alert">
-        <button type="button" class="close" data-dismiss = "alert" id="alert-close-button">x</button>
-        <p class="my-0">Diese Webseite verwendet keine Cookies, speichert allerdings Parameter der Kalkulation im Sitzungsspeicher des Browsers. Diese Daten werden gelöscht, sobald Sie den Browserfenster schließen.</p>
-    </div>
-    <div id="container-footer" class="small container-fluid p-3 bg-secondary text-light">
-        <p class="mb-1" style="font-family: 'Arsenal'">Webseitenlogo wurde netterweise von <a class="text-warning" href="https://www.flaticon.com/authors/smashicons"><u>Smashicons</u></a> via www.flaticon.com bereitgestellt.</p>
-    </div>
-</body>
-
+      <!-- Footer -->
+      <div id="container-footer" class="small p-3 m-0 alert alert-secondary">
+         <p class="mb-0" style="font-family: 'Arsenal'">Webseitenlogo <img src="logo.svg" width="20" height="20" alt="Taschenrechnerlogo"> wurde netterweise von <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> via www.flaticon.com bereitgestellt.</p>
+      </div>
+   </body>
 </html>

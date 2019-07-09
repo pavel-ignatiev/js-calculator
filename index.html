@@ -1,93 +1,108 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="de">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+      <!-- Google font for the footer -->
+      <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Enable dismissable Bootstrap alerts -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+      <script src="alert.js" crossorigin="anonymous"></script>
 
-    <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+      <title>Investitionsrechner</title>
+   </head>
+   <body>
 
-    <!-- Enable dismissable Bootstrap alerts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="alert.js" crossorigin="anonymous"></script>
-
-    <title>Investitionsrechner</title>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">
-                    <img src="logo.svg" width="30" height="30" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse my-lg-0" id="navbarSupportedContent">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="risks.html">Risiken <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="strategies.html">Strategien</a>
-                        <a class="nav-item nav-link" href="types.html">Typen</a>
-                        <a class="nav-item nav-link" href="calculator.html">Rechner</a>
-                    </div>
-                </div>
-    </nav>
-    <div id="container-main" class="container p-5 h-100 justify-content-center">
-        <div class="row-fluid">
-            <div class="col">
-                <h3>Was heißt Investieren?</h3>
-                <p>Investieren ist eine Kunst der Geldvermehrung. Warum ist das eine Kunst? Tatsache ist, dass erfolgreiche Investitionen nicht durch das Lesen eines intelligenten Buches oder die Durchführung einer Reihe spezifischer Aktionen erlernt werden können. Es gibt keine garantierten Gewinnmöglichkeiten, aber es gibt viel Raum für Kreativität, Analyse und Handeln. Sie werden nicht zwei Investoren treffen, die zu 100% gleich investieren. Investoren beherrschen diese Kunst und ihre eigene Erfahrung spielt dabei eine große Rolle.</p>
-                <p>Um zu verstehen, was Investitionen sind, stellen wir uns vor, wie ein Huhn Eier legt. Wir verkaufen diese gelegten Eier und kaufen mit dem Geld ein weiteres Huhn. Dann kaufen wir auch Eier. Als Ergebnis erhalten wir viele Hühner, die genügend Eier produzieren, um alle unsere Wünsche und einen angemessenen Lebensstandard zu erfüllen. Hier ist die Henne ein Vermögenswert, und die Eier sind Einkommen, der Cashflow, der durch die Vermögenswerte generiert wird. Viele Hennen bedeuten Kapital, ein Anlageportfolio, das durch den Erwerb neuer Hennen (Assets) wächst.</p>
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="index.html">
+            <img src="logo.svg" width="30" height="30" alt="Taschenrechnerlogo">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse my-lg-0" id="navbarSupportedContent">
+            <div class="navbar-nav">
+               <a class="nav-item nav-link" href="risks.html">Risiken <span class="sr-only">(current)</span></a>
+               <a class="nav-item nav-link" href="strategies.html">Strategien</a>
+               <a class="nav-item nav-link" href="types.html">Typen</a>
+               <a class="nav-item nav-link" href="calculator.html">Rechner</a>
             </div>
-        </div>
-    </div>
-    <div class="container h-100 justify-content-center">
-        <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col">
-                        <div class="row my-3"></div>
-                        <div class="row p-4">
-                            <div class="col p-4 bg-dark ">
-                                <div class="row justify-content-center">
-                                    <div class="col align-self-center">
-                                        <img src="risk.svg" class="img" alt="Responsive image" height="50" width="50">
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col align-self-center">
-                                        <a href="#" class="stretched-link">Schätzen Sie Risiken ein</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col p-4">
-                                    <a href="#" class="stretched-link">Erarbeiten Sie Ihre Investitionsstrategie</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col p-4">
-                                    <a href="#" class="stretched-link">Ermitteln Sie Ihren Investortyp</a>
-                            </div>
-                            <div class="col p-4">
-                                    <a href="#" class="stretched-link">Berechnen Sie den Zukunftswert Ihrer Geldanlage</a>
-                            </div>
-                        </div>
-                        <div class="row my-3"></div>                   
-                    </div>
-                    <div class="col-2"></div>
-        </div>
-    </div>
-    <div id="container-alert" class="mb-0 p-4 alert alert-warning alert-dismissible small fixed-bottom" role="alert">
-        <button type="button" class="close" data-dismiss = "alert" id="alert-close-button">x</button>
-        <p class="my-0">Diese Webseite verwendet keine Cookies, speichert allerdings Parameter der Kalkulation im Sitzungsspeicher des Browsers. Diese Daten werden gelöscht, sobald Sie den Browserfenster schließen.</p>
-    </div>
-    <div id="container-footer" class="small container-fluid p-3 bg-secondary text-light">
-        <p class="mb-1" style="font-family: 'Arsenal'">Webseitenlogo wurde netterweise von <a class="text-warning" href="https://www.flaticon.com/authors/smashicons"><u>Smashicons</u></a> via www.flaticon.com bereitgestellt.</p>
-    </div>
-</body>
+         </div>
+      </nav>
 
+      <!-- Main content -->
+      <div id="container-main" class="container p-5 h-100 justify-content-center">
+         <div class="row-fluid mb-5">
+            <div class="col">
+               <img src="banner.jpg" class="img-fluid" alt="Banner">
+            </div>
+         </div>
+         <div class="row-fluid">
+            <div class="col">
+               <h3>Was heißt Investieren?</h3>
+               <p>
+                  Investieren ist eine Kunst der Geldvermehrung. Warum ist das eine Kunst? Tatsache ist, dass erfolgreiche Investitionen nicht durch das Lesen eines intelligenten Buches oder die Durchführung einer Reihe spezifischer Aktionen erlernt werden können. Es gibt keine garantierten Gewinnmöglichkeiten, aber es gibt viel Raum für Kreativität, Analyse und Handeln. Sie werden nicht zwei Investoren treffen, die zu 100% gleich investieren. Investoren beherrschen diese Kunst und ihre eigene Erfahrung spielt dabei eine große Rolle.
+               </p>
+               <p>
+                  Um zu verstehen, was Investitionen sind, stellen wir uns vor, wie ein Huhn Eier legt. Wir verkaufen diese gelegten Eier und kaufen mit dem Geld ein weiteres Huhn. Dann kaufen wir auch Eier. Als Ergebnis erhalten wir viele Hühner, die genügend Eier produzieren, um alle unsere Wünsche und einen angemessenen Lebensstandard zu erfüllen. Hier ist die Henne ein Vermögenswert, und die Eier sind Einkommen, der Cashflow, der durch die Vermögenswerte generiert wird. Viele Hennen bedeuten Kapital, ein Anlageportfolio, das durch den Erwerb neuer Hennen (Assets) wächst.
+               </p>
+               <p>
+                  Eine Investition ist eine Investition von Geld, um einen Gewinn zu erzielen. Die Erzielung eines Gewinns ist der Zweck der Investition. Investitionen haben zwei wichtige Eigenschaften: Risiko und Ertrag. Risiko und Ertrag stehen im Zusammenhang und sind meist direkt proportional. Das heißt, je höher die potenzielle Rendite, desto höher das Verlustrisiko. Es gibt keine risikofreien Anlagen - denken Sie daran! Um einen Gewinn erzielen zu können, ist es notwendig, ein berechtigtes Risiko einzugehen. Übrigens, wenn das Verlustrisiko hoch und die Chance auf einen Gewinn gering ist, ist es eine schlechte Investition. Wenn Sie einem hohen Risiko zustimmen, sollte die Prämie dafür angemessen sein.
+               </p>
+               <ul>
+                  <li>
+                     Investitionen sind langfristige Investitionen, deren Fertigstellung Jahre in Anspruch nimmt (im Gegensatz zu Spekulationen über kurzfristige Kursschwankungen).
+                  </li>
+                  <li>
+                     Investitionen können sowohl in Immobilien (Immobilien, Urheberrechte, Geschäftsobjekte) als auch in Finanzanlagen (Aktien, Fondsanteile, Anleihen) erfolgen.
+                  </li>
+                  <li>
+                     Es gibt Aktienanlagen (Aktien, Geschäftsanteile) und Schuldtitel (Anleihen, Darlehen, Kredite). Übrigens, nach dieser These, eine Person, die ein Darlehen von einer Bank aufgenommen hat, wird zu ihrem Investitionsobjekt, ein Vermögenswert der Bank, der ihr Gewinn bringt. Das ist richtig!
+                  </li>
+                  <li>
+                     Mit der Investition investieren Sie vor allem Geld und in die Minderheit - Zeit und Mühe.
+                  </li>
+                  <li>
+                     Langfristige Aktienanlagen bringen eher Renditen als Verluste.
+                  </li>
+               </ul>
+               <div class="alert-secondary p-3 mb-5 small text-muted">
+                  Quelle: <a href="https://damoney.ru/invest/chto-takoe-investicii.php">https://damoney.ru/invest/chto-takoe-investicii.php</a> übersetzt mit <a href="https://www.deepl.com">DeepL</a>
+               </div>
+               <h3>Weiterführende Informationen</h3>
+               <div class="list-group my-4">
+                  <a href="risks.html" class="list-group-item list-group-item-action list-group-item-info my-1">Wie schätze ich Investitionsrisiken ein?</a>
+                  <a href="strategies.html" class="list-group-item list-group-item-action list-group-item-info my-1">Welche Anlagestrategien gibt es?</a>
+                  <a href="types.html" class="list-group-item list-group-item-action list-group-item-info my-1">Was für ein Investortyp bin ich?</a>
+                  <a href="calculator.html" class="list-group-item list-group-item-action list-group-item-info my-1">Investitionsrechner: Ermitteln Sie den Zukunftswert Ihrer Geldanlage</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Cookie alert -->
+      <div id="container-alert" class="mb-0 p-4 alert alert-warning alert-dismissible small fixed-bottom" role="alert">
+         <button type="button" class="close" data-dismiss = "alert" id="alert-close-button">x</button>
+         <p class="my-0">Diese Webseite verwendet keine Cookies, speichert allerdings Parameter der Kalkulation im Sitzungsspeicher des Browsers. Diese Daten werden gelöscht, sobald Sie den Browserfenster schließen.</p>
+      </div>
+      
+      <!-- Footer -->
+      <div id="container-footer" class="small p-3 m-0 alert alert-secondary">
+         <p class="mb-0" style="font-family: 'Arsenal'">Webseitenlogo <img src="logo.svg" width="20" height="20" alt="Taschenrechnerlogo"> wurde netterweise von <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> via www.flaticon.com bereitgestellt.</p>
+         <p class="mb-0" style="font-family: 'Arsenal'">Photo von Financial Times von <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> via <a href="https://unsplash.com/search/photos/investment?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+      </div>
+   </body>
 </html>
+
